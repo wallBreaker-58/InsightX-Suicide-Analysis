@@ -7,3 +7,7 @@ df = pd.read_csv("data.csv")
 
 # Display first rows
 df.head()
+
+# Check missing values
+#handling missing value
+df.isnull().sum()
