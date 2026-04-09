@@ -11,3 +11,9 @@ df.head()
 # Check missing values
 #handling missing value
 df.isnull().sum()
+
+# Fill missing values with mean (for numerical columns)
+df.fillna(df.mean(numeric_only=True), inplace=True)
+
+# For categorical columns (if any missing)
+df.fillna("Unknown", inplace=True)
