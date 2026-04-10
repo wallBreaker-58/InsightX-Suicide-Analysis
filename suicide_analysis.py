@@ -17,3 +17,10 @@ df.fillna(df.mean(numeric_only=True), inplace=True)
 
 # For categorical columns (if any missing)
 df.fillna("Unknown", inplace=True)
+
+# Check duplicates
+#remove duplicates
+df.duplicated().sum()
+
+# Drop duplicates
+df.drop_duplicates(inplace=True)
