@@ -24,3 +24,9 @@ df.duplicated().sum()
 
 # Drop duplicates
 df.drop_duplicates(inplace=True)
+
+# Check datatypes
+df.dtypes
+
+# Example: Convert Year to int (if needed)
+df['Year'] = df['Year'].astype(int)
