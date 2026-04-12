@@ -30,3 +30,15 @@ df.dtypes
 
 # Example: Convert Year to int (if needed)
 df['Year'] = df['Year'].astype(int)
+
+# EDA data analysis
+# Dataset info
+df.info()
+# Missing values
+df.isnull().sum()
+# Summary statistics
+df.describe()
+# Unique countries
+df['CountryName'].nunique()
+# Unique years
+df['Year'].unique()
