@@ -42,3 +42,8 @@ df.describe()
 df['CountryName'].nunique()
 # Unique years
 df['Year'].unique()
+
+# Selecting important columns
+df_selected = df[['Year', 'CountryName', 'Sex', 'AgeGroup',
+                  'SuicideCount', 'DeathRatePer100K',
+                  'GDPPerCapita', 'Population']]
