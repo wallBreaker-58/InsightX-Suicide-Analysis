@@ -47,3 +47,9 @@ df['Year'].unique()
 df_selected = df[['Year', 'CountryName', 'Sex', 'AgeGroup',
                   'SuicideCount', 'DeathRatePer100K',
                   'GDPPerCapita', 'Population']]
+
+# Total suicides per year
+yearly_suicides = df.groupby('Year')['SuicideCount'].sum()
+
+# Average suicide rate per year
+avg_rate = df.groupby('Year')['DeathRatePer100K'].mean()
