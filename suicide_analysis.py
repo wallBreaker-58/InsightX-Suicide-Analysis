@@ -53,3 +53,9 @@ yearly_suicides = df.groupby('Year')['SuicideCount'].sum()
 
 # Average suicide rate per year
 avg_rate = df.groupby('Year')['DeathRatePer100K'].mean()
+
+# Highest suicide year
+yearly_suicides.idxmax()
+
+# Lowest suicide year
+yearly_suicides.idxmin()
