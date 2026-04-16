@@ -59,3 +59,5 @@ yearly_suicides.idxmax()
 
 # Lowest suicide year
 yearly_suicides.idxmin()
+
+import matplotlib.pyplot as plt
