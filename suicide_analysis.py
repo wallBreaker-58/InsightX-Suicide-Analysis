@@ -61,3 +61,12 @@ yearly_suicides.idxmax()
 yearly_suicides.idxmin()
 
 import matplotlib.pyplot as plt
+
+# Data visualization
+# Line plot 
+plt.figure()
+yearly_suicides.plot()
+plt.title("Suicide Trend Over Years")
+plt.xlabel("Year")
+plt.ylabel("Total Suicides")
+plt.show()
