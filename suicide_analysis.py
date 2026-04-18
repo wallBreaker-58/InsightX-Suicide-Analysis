@@ -70,3 +70,11 @@ plt.title("Suicide Trend Over Years")
 plt.xlabel("Year")
 plt.ylabel("Total Suicides")
 plt.show()
+
+# Top countries analysis
+top_countries = df.groupby('CountryName')['SuicideCount'].sum().sort_values(ascending=False).head(10)
+
+plt.figure()
+top_countries.plot(kind='bar')
+plt.title("Top 10 Countries by Suicide Count")
+plt.show()
