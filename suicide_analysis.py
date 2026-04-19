@@ -78,3 +78,11 @@ plt.figure()
 top_countries.plot(kind='bar')
 plt.title("Top 10 Countries by Suicide Count")
 plt.show()
+
+# Gender distribution analysis
+gender_data = df.groupby('Sex')['SuicideCount'].sum()
+
+plt.figure()
+gender_data.plot(kind='pie', autopct='%1.1f%%')
+plt.title("Suicide Distribution by Gender")
+plt.show()
