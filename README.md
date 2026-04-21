@@ -1,63 +1,31 @@
-# 📊 LifeLens Analytics
+# InsightX - Suicide Analysis
 
-### A data-driven lens to understand global suicide trends and insights.
+## Project Overview
+This project analyzes global suicide statistics to identify trends, patterns, and key insights using data analysis and visualization techniques.
 
----
+## Features
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- Trend analysis over time
+- Geographic and demographic breakdown
+- Data visualizations using Matplotlib
 
-## 🔍 Overview
-This project performs data cleaning, exploratory data analysis (EDA), and visualization on a suicide dataset using Python. The goal is to uncover patterns, trends, and insights across countries, years, and demographics.
+## Files
+- `suicide_analysis.py` - Main analysis script
+- `INT375.ipynb` - Jupyter notebook with detailed analysis
 
----
+## Requirements
+- pandas
+- numpy
+- matplotlib
 
-## 🛠️ Tech Stack
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+## Usage
+```python
+python suicide_analysis.py
+```
 
----
-
-## 🧹 Data Cleaning
-- Handled missing values
-- Removed duplicates
-- Fixed data types
-- Ensured dataset consistency
-
----
-
-## 📈 Analysis Performed
-- Year-wise suicide trends
-- Country-wise analysis
-- Gender-based comparison
-- Correlation with GDP and population
-
----
-
-## 📊 Visualizations
-- Line plots
-- Bar charts
-- Pie charts
-- Histograms
-- Heatmaps
-- Scatter plots
-
----
-
-## 🧠 Insights
-- Identified global suicide trends
-- Highlighted demographic differences
-- Explored socio-economic relationships
-
----
-
-## 🚀 Future Scope
-- Machine Learning predictions
-- Interactive dashboard (Power BI / Streamlit)
-- Advanced statistical analysis
-
----
-
-## 📁 Files
-- `data.csv` → Dataset
-- `analysis.ipynb` → Full analysis notebook
+## Analysis Highlights
+- Identifies yearly suicide trends
+- Analyzes top countries by suicide count
+- Breaks down by gender and age groups
+- Correlates with economic indicators (GDP per capita)
